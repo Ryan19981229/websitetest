@@ -1,4 +1,7 @@
 site_name: My Docs
-site_url: https://mydomain.org/mysite #
+site_url: https://Ryan19981229.github.io/websitetest/
 theme:
   name: material
+extra:
+  version:
+    enable: true
