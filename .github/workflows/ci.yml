@@ -16,8 +16,9 @@ jobs:
           python-version: 3.x
       - uses: actions/cache@v2
         with:
-          key: ${{ github.ref }}-${{ github.run_number }}
+          key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
+      - run: rm -rf .cache
       - run: mkdocs gh-deploy --force
